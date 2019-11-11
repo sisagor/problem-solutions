@@ -1,0 +1,4 @@
+Qus : a array like 0,1,1,2,4,7,13,24,44,81.
+Task: 4th number will be 1st 3's summation result.
+pass the paramitter from forth position number as much as you want.
+#it's did summation by array postion and retun you the summation result.
