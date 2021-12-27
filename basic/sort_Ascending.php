@@ -1,0 +1,36 @@
+<?php
+
+$array = [12, 11, 10 , 9 , 8, 7, 4, 2, 1];
+
+//make the array descending order;
+
+$temp = array();
+
+getDescendingOrder($array, $temp);
+
+
+
+function getDescendingOrder($array, $temp)
+{
+    // traverse 0 to array length
+    for ($i = 0; $i < count($array) - 1; $i++) {
+
+        // traverse i+1 to array length
+        for ($j = $i + 1; $j < count($array); $j++) {
+
+            // compare array element with
+            // all next element
+            if ($array[$i] > $array[$j]) {
+
+                $temp = $array[$i];
+                $array[$i] = $array[$j];
+                $array[$j] = $temp;
+            }
+        }
+    }
+
+    // print all element of array
+    foreach ($array as $val) {
+        echo $val . ' ';
+    }
+}
